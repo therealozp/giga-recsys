@@ -11,7 +11,9 @@ genders = ["M","F"]
 startTime = []
 endTime = []
 
-n_names = 100
+print ('How many users to generate ')
+n_names = int(input())
+
 for n in range(n_names):
     name.append(fake.name())
     time = fake.unix_time(datetime.datetime(2021, 12, 31))
